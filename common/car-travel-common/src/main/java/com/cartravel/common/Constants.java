@@ -8,7 +8,6 @@ public class Constants {
     //存储订单gps轨迹信息
     public final static String HTAB_GPS = "HTAB_GPS";
 
-    //海口订单信息表
     public final static String HTAB_HAIKOU_ORDER = "HTAB_HAIKOU_ORDER";
 
     //默认hbase表的列簇名
