@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/car-travel.iml" filepath="$PROJECT_DIR$/car-travel.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common/car-travel-common/car-travel-common.iml" filepath="$PROJECT_DIR$/common/car-travel-common/car-travel-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common/car-travel-kafka/car-travel-kafka.iml" filepath="$PROJECT_DIR$/common/car-travel-kafka/car-travel-kafka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/portal/car-travel-ordermonitor-web/car-travel-ordermonitor-web.iml" filepath="$PROJECT_DIR$/portal/car-travel-ordermonitor-web/car-travel-ordermonitor-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/car-travel-ordermonitor-web/car-travel-ordermonitor-web.iml" filepath="$PROJECT_DIR$/car-travel-ordermonitor-web/car-travel-ordermonitor-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common/car-travel-parent/car-travel-parent.iml" filepath="$PROJECT_DIR$/common/car-travel-parent/car-travel-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/portal/car-travel-restful-web/car-travel-restful-web.iml" filepath="$PROJECT_DIR$/portal/car-travel-restful-web/car-travel-restful-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/car-travel-restful-web/car-travel-restful-web.iml" filepath="$PROJECT_DIR$/car-travel-restful-web/car-travel-restful-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common/car-travel-service/car-travel-service.iml" filepath="$PROJECT_DIR$/common/car-travel-service/car-travel-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common/car-travel-spark/car-travel-spark.iml" filepath="$PROJECT_DIR$/common/car-travel-spark/car-travel-spark.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common/car-travel-util/car-travel-util.iml" filepath="$PROJECT_DIR$/common/car-travel-util/car-travel-util.iml" />
+      <module fileurl="file://$PROJECT_DIR$/portal/kafka-consumer/kafka-consumer.iml" filepath="$PROJECT_DIR$/portal/kafka-consumer/kafka-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kafka-consumer/kafka-consumer.iml" filepath="$PROJECT_DIR$/kafka-consumer/kafka-consumer.iml" />
+    </modules>
+  </component>
+</project>

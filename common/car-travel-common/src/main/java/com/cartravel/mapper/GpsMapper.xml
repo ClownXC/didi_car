@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.cartravel.dao.GpsMapper" >
+  <resultMap id="BaseResultMap" type="com.cartravel.entity.GpsEntity" >
+    <result column="ROWKEY" property="rowkey" jdbcType="VARCHAR" />
+    <result column="DRIVERID" property="driverId"/>
+    <result column="ORDERID" property="oerderId" jdbcType="VARCHAR" />
+    <result column="TIMESTAMP" property="timestamp" jdbcType="VARCHAR" />
+    <result column="TIME" property="time" jdbcType="VARCHAR" />
+    <result column="LNG" property="lng" jdbcType="VARCHAR" />
+    <result column="LAT" property="lat" jdbcType="VARCHAR" />
+  </resultMap>
+
+  <!--虚拟车站映射-->
+  <resultMap id="VirtualStationMap" type="com.cartravel.modules.VirtualStationsVo" >
+    <result column="ROWKEY" property="rowkey" jdbcType="VARCHAR" />
+    <result column="CITY_ID" property="cityCode"/>
+    <result column="DISTRICT_NAME" property="districtName"/>
+    <result column="STARTING_LNG" property="startingLng" jdbcType="VARCHAR" />
+    <result column="STARTING_LAT" property="startingLat" jdbcType="VARCHAR" />
+  </resultMap>
+
+  <!--行政区域虚拟车站统计结果映射-->
+  <resultMap id="VirtualStationCountMap" type="com.cartravel.modules.VirtualStationCountVo" >
+    <result column="DISTRICT_NAME" property="districtName" jdbcType="VARCHAR" />
+    <result column="COUNT" property="count" jdbcType="VARCHAR"/>
+  </resultMap>
+
+  <!--暂时没使用到-->
+  <select id="query" resultType="com.cartravel.entity.GpsEntity" parameterType="com.cartravel.modules.QueryWrapper">
+    select rowkey,driverId,orderId,timestamp,time, lng,lat from HTAB_GPS
+  	<where>
+      <if test="startTime != null and startTime != '' " >
+        and time <![CDATA[ >= #{startTime,jdbcType=VARCHAR}]]>
+      </if>
+
+      <if test="endTime != null and endTime != '' " >
+        and time <![CDATA[ <= #{endTime,jdbcType=VARCHAR}]]>
+      </if>
+
+      <if test="cityCode != null and cityCode != '' " >
+        and cityCode =#{cityCode,jdbcType=VARCHAR}
+      </if>
+    </where>
+  </select>
+
+  <select id="queryGps" resultType="com.cartravel.modules.GpsVo" parameterType="com.cartravel.modules.QueryWrapper">
+    select time, lng,lat from HTAB_GPS
+    <where>
+      <if test="startTime != null and startTime != '' " >
+        and time <![CDATA[ >= #{startTime,jdbcType=VARCHAR}]]>
+      </if>
+
+      <if test="endTime != null and endTime != '' " >
+        and time <![CDATA[ <= #{endTime,jdbcType=VARCHAR}]]>
+      </if>
+
+      <if test="cityCode != null and cityCode != '' " >
+        and cityCode =#{cityCode,jdbcType=VARCHAR}
+      </if>
+    </where>
+  </select>
+
+  <select id="queryVirtualStations" resultMap="VirtualStationMap"  parameterType="com.cartravel.modules.StationWrapper">
+    select CITY_ID,DISTRICT_NAME,STARTING_LNG,STARTING_LAT from VIRTUAL_STATIONS
+    <where>
+      <if test="cityCode != null and cityCode != '' " >
+        and CITY_ID <![CDATA[ = #{cityCode,jdbcType=VARCHAR}]]>
+      </if>
+      <if test="districtName != null and districtName != '' " >
+        and DISTRICT_NAME <![CDATA[ = #{districtName,jdbcType=VARCHAR}]]>
+      </if>
+    </where>
+  </select>
+
+  <select id="virtualStationCount" parameterType="string" resultMap="VirtualStationCountMap">
+    select DISTRICT_NAME,count(1) COUNT from VIRTUAL_STATIONS
+    where CITY_ID=#{aa} group by DISTRICT_NAME
+  </select>
+</mapper>

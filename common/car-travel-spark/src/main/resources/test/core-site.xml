@@ -1,0 +1,22 @@
+<configuration>
+ <!-- 指定HDFS老大（namenode）的通信地址 -->
+        <property>
+                <name>fs.defaultFS</name>
+                <value>hdfs://cdh1:9000</value>
+         </property>
+ <!-- 指定hadoop运行时产生文件的存储路径 -->
+        <property>
+                <name>hadoop.tmp.dir</name>
+                <value>/opt/cdh/hadoop-2.6.0-cdh5.14.0/tmp</value>
+        </property>
+ <!-- <property>
+     <name>io.compression.codecs</name>
+     <value>
+         org.apache.hadoop.io.compress.GzipCodec,
+         org.apache.hadoop.io.compress.DefaultCodec,
+         org.apache.hadoop.io.compress.BZip2Codec,
+         org.apache.hadoop.io.compress.SnappyCodec
+     </value>
+ </property>
+-->
+</configuration>

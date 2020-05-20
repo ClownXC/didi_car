@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.cartravel.mapper._driver_order_summary_mapper">
+
+
+    <select id="_driver_order_summary_searchContext" resultType="com.cartravel.entity._driver_order_summary">
+        SELECT
+        "driver_id" ,
+        "driver_name" ,
+        "_year_comple_rate" ,
+        "_quarter_comple_rate" ,
+        "_month_comple_rate" ,
+        "_week_comple_rate" ,
+        "_day_comple_rate"
+        FROM
+        "_driver_order_summary"
+    </select>
+
+
+</mapper>
+

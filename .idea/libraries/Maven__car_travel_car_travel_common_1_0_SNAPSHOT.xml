@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: car-travel:car-travel-common:1.0-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../didi/maven/car-travel/car-travel-common/1.0-SNAPSHOT/car-travel-common-1.0-SNAPSHOT.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../../didi/maven/car-travel/car-travel-common/1.0-SNAPSHOT/car-travel-common-1.0-SNAPSHOT-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../didi/maven/car-travel/car-travel-common/1.0-SNAPSHOT/car-travel-common-1.0-SNAPSHOT-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

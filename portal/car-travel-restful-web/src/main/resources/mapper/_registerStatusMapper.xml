@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.cartravel.mapper._registerStatusMapper">
+
+
+    <select id="_registerStatus_searchContext" resultType="com.cartravel.entity._registerStatus">
+        SELECT
+        "dayNewUserCount" ,
+        "weekNewUserCount" ,
+        "monthNewUserCount"
+        FROM
+        "registerStatus"
+    </select>
+
+
+    <resultMap id="s5" type="com.cartravel.entity._registerStatus">
+        <id column="id" property="id" jdbcType="VARCHAR"/>
+        <result property="registerTotalCount" column="registerTotalCount" jdbcType="VARCHAR"/>
+        <result property="dayNewUserCount" column="dayNewUserCount" jdbcType="VARCHAR"/>
+        <result property="weekNewUserCount" column="weekNewUserCount" jdbcType="VARCHAR"/>
+        <result property="monthNewUserCount" column="monthNewUserCount" jdbcType="VARCHAR"/>
+    </resultMap>
+</mapper>
+

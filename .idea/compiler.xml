@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="car-travel-common" />
+        <module name="car-travel-kafka" />
+        <module name="car-travel-ordermonitor-web" />
+        <module name="car-travel-restful-web" />
+        <module name="car-travel-service" />
+        <module name="car-travel-spark" />
+        <module name="car-travel-util" />
+        <module name="kafka-consumer" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="car-travel" target="1.5" />
+      <module name="car-travel-common" target="1.8" />
+      <module name="car-travel-kafka" target="1.8" />
+      <module name="car-travel-ordermonitor-web" target="1.8" />
+      <module name="car-travel-parent" target="1.8" />
+      <module name="car-travel-restful-web" target="1.8" />
+      <module name="car-travel-service" target="1.8" />
+      <module name="car-travel-spark" target="1.7" />
+      <module name="car-travel-util" target="1.8" />
+      <module name="kafka-consumer" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

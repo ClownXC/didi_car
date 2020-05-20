@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.cartravel.mapper._hot_order_mapper">
+
+
+    <select id="_hot_order_searchContext" resultType="com.cartravel.entity._hot_order">
+        SELECT
+        "_city_code" ,
+        "_day_order_num" ,
+        "_new_orders_num"
+        FROM
+        "_hot_order"
+    </select>
+
+
+    <resultMap id="s7" type="com.cartravel.entity._hot_order">
+        <id column="id" property="id" jdbcType="VARCHAR"/>
+        <result property="_city_code" column="_city_code" jdbcType="VARCHAR"/>
+        <result property="_day_order_num" column="_day_order_num" jdbcType="VARCHAR"/>
+        <result property="_new_orders_num" column="_new_orders_num" jdbcType="VARCHAR"/>
+    </resultMap>
+</mapper>
+

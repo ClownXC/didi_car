@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.cartravel.mapper._final_summary_pat_order_mapper">
+
+
+    <select id="_final_summary_pat_order_searchContext" resultType="com.cartravel.entity._final_summary_pat_order">
+        SELECT
+        "city_name" ,
+        "_year_comple_rate" ,
+        "_quarter_comple_rate" ,
+        "_month_comple_rate" ,
+        "_week_comple_rate" ,
+        "_day_comple_rate"
+        FROM
+        "_final_summary_pat_order"
+    </select>
+
+
+
+</mapper>
+

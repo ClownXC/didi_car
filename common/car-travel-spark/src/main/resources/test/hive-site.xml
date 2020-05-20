@@ -1,0 +1,77 @@
+<configuration>
+	<property>
+                <name>javax.jdo.option.ConnectionURL</name>
+                <value>jdbc:mysql://cdh1:3306/hive?createDatabaseIfNotExist=true</value>
+        </property>
+        <property>
+            <name>javax.jdo.option.ConnectionDriverName</name>
+                <value>com.mysql.jdbc.Driver</value>
+        </property>
+        <property>
+                <name>javax.jdo.option.ConnectionUserName</name>
+                <value>root</value>
+        </property>
+        <property>
+             <name>javax.jdo.option.ConnectionPassword</name>
+                <value>root</value>
+        </property>
+	<property>
+    		<name>hive.metastore.warehouse.dir</name>
+    		<value>/user/hive/warehouse</value>
+  	</property>
+        <property>
+                <name>hive.cli.print.current.db</name>
+                <value>true</value>
+        </property>
+        <property>
+                <name>hive.cli.print.header</name>
+                <value>true</value>
+        </property>
+        <property>
+                <name>hive.server2.thrift.bind.host</name>
+                <value>hadoop01</value>
+        </property>
+        <property>
+                <name>hive.metastore.uris</name>
+                <value>thrift://hadoop01:9083</value>
+        </property>
+         <property>
+                <name>hive.metastore.client.socket.timeout</name>
+                <value>3600</value>
+        </property>
+
+
+<property>
+	<name>hive.server2.support.dynamic.service.discovery</name>
+	<value>true</value>
+</property>
+
+
+<property>
+	<name>hive.server2.zookeeper.namespace</name>
+	<value>hiveserver2_zk</value>
+</property>
+
+<property>
+	<name>hive.zookeeper.quorum</name>
+	<value>cdh1:2181,cdh2:2181,cdh3:2181</value>
+</property>
+
+<property>
+	<name>hive.zookeeper.client.port</name>
+	<value>2181</value>
+</property>
+
+<property>
+	<name>hive.server2.thrift.bind.host</name>
+	<value>cdh1</value>
+</property>
+
+<property>
+	<name>hive.server2.thrift.port</name>
+	<value>10003</value>
+</property>
+
+
+</configuration>
+

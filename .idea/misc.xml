@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/common/car-travel-util/pom.xml" />
+        <option value="$PROJECT_DIR$/common/car-travel-spark/pom.xml" />
+        <option value="$PROJECT_DIR$/common/car-travel-parent/pom.xml" />
+        <option value="$PROJECT_DIR$/common/car-travel-service/pom.xml" />
+        <option value="$PROJECT_DIR$/common/car-travel-kafka/pom.xml" />
+        <option value="$PROJECT_DIR$/common/car-travel-common/pom.xml" />
+        <option value="$PROJECT_DIR$/portal/kafka-counsumer/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.cartravel.mapper.Summary_vehicle_order_mapper">
+
+
+    <select id="vehicle_order_searchContext" resultType="com.cartravel.entity._summary_vehicle_order_df">
+        SELECT
+        "o_begin_address_code" ,
+        "monthVehicleCount" ,
+        "dayVehicleCount" ,
+        "monthOrderCount" ,
+        "weekOrderCount" ,
+        "dayOrderCount"
+        FROM
+        "final_summary_order"
+    </select>
+
+
+    <!--<resultMap id="ss" type="com.cartravel.entity._summary_vehicle_order_df">-->
+        <!--<id column="id" property="id" jdbcType="VARCHAR"/>-->
+        <!--<result property="city_code" column="city_code" jdbcType="VARCHAR"/>-->
+        <!--<result property="_month_vehicle_num" column="_month_vehicle_num" jdbcType="VARCHAR"/>-->
+        <!--<result property="_day_vehicle_num" column="_day_vehicle_num" jdbcType="VARCHAR"/>-->
+        <!--<result property="_week_order_num" column="_week_order_num" jdbcType="VARCHAR"/>-->
+        <!--<result property="_month_order_num" column="_month_order_num" jdbcType="VARCHAR"/>-->
+        <!--<result property="_day_order_num" column="_day_order_num" jdbcType="VARCHAR"/>-->
+    <!--</resultMap>-->
+</mapper>
+

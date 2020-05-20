@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/common/car-travel-common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/common/car-travel-kafka" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/common/car-travel-parent" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/common/car-travel-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/common/car-travel-spark" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/common/car-travel-util" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/portal/car-travel-ordermonitor-web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/portal/car-travel-restful-web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/portal/kafka-consumer" charset="UTF-8" />
+  </component>
+</project>

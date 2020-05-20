@@ -1,0 +1,30 @@
+<configuration>
+		<property>
+                <name>dfs.replication</name>
+                <value>2</value>
+        </property>
+        <property>
+               <name>dfs.secondary.http.address</name>
+               <value>cdh1:50090</value>
+		</property>
+        <property>
+                <name>dfs.client.read.shortcircuit</name>
+				<value>true</value>
+        </property>
+        <property>
+                <name>dfs.domain.socket.path</name>
+                <value>/var/run/hdfs-sockets/dn</value>
+        </property>
+        <property>
+                <name>dfs.client.file-block-storage-locations.timeout.millis</name>
+                <value>10000</value>
+        </property>
+        <property>
+                <name>dfs.datanode.hdfs-blocks-metadata.enabled</name>
+                <value>true</value>
+		</property>
+         <property>
+                <name>dfs.permissions.enabled</name>
+                <value>false</value>
+        </property>
+</configuration>

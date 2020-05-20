@@ -1,0 +1,71 @@
+spring:
+  mvc:
+    view:
+      prefix:/
+      sufix:.html
+
+#server:
+#  tomcat:
+#    uri-encoding: UTF-8
+#    max-threads: 1000
+#    min-spare-threads: 30
+#  port: 8080
+#  context-path: /com.cartravel
+  #
+  ## 应用名称
+  #spring:
+  application:
+    name: car-travel-ordermonitor-web
+  #    jackson:
+  #      date-format: yyyy-MM-dd HH:mm:ss
+  #      time-zone: GMT+8
+  #  http:
+  #    multipart:
+  #      max-file-size: 100MB
+  #      max-request-size: 100MB
+  #      enabled: true
+  #
+  datasource.driver-class-name: org.apache.phoenix.jdbc.PhoenixDriver
+  datasource.url: jdbc:phoenix:cdh1,cdh2,cdh3:2181
+  datasource.type: com.alibaba.druid.pool.DruidDataSource
+
+mybatis:
+  mapperLocations: classpath*:com/com.cartravel/mapper/*Mapper.xml
+#  configuration:
+#    map-underscore-to-camel-case: true
+#  type-aliases-package: com.cartravel.dao
+#打印mybatis的sql语句
+logging:
+  level:
+    com.cartravel.dao: debug
+#
+#---
+##  数据库配置
+#spring:
+#  datasource:
+#    hikari:
+#      #一个连接idle状态的最大时长（毫秒），超时则释放，缺省为10分钟
+#      idle_timeout: 600000
+#      # 等待连接池分配连接的最大时长（毫秒），超过这个时长还没有可用的连接则发生SQLException 缺省为30秒
+#      connection_timeout: 30000
+#      #一个连接的生命时长（毫秒），超时而且没有被使用则被释放，缺省为30分钟，建议比数据库超时时间少30秒
+#      max_lifetime: 1800000
+#      #连接池中允许最大的连接数，缺省为10
+#      maximum-pool-size: 100
+#      connection-test-query: 'SELECT 1'
+#    driver-class-name: org.postgresql.Driver
+#    url: @spring.datasource.url@
+#    username: @spring.datasource.username@
+#    password: @spring.datasource.password@
+#    type: com.zaxxer.hikari.HikariDataSource
+##jedis pool
+#jedis:
+#  pool:
+#    host: @jedis.pool.host@
+#    port: @jedis.pool.port@
+#    config:
+#      maxTotal: 100
+#      maxIdle: 10
+#      maxWaitMillis: 10000
+#      password: @jedis.pool.config.password@
+#

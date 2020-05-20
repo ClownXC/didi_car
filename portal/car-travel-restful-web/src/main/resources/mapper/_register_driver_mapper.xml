@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.cartravel.mapper._register_driver_mapper">
+
+
+    <select id="_register_driver_searchContext" resultType="com.cartravel.entity._register_driver">
+        SELECT
+        "register_city" ,
+        "_register_year_num" ,
+        "_register_quarter_num" ,
+        "_register_month_num" ,
+        "_register_week_num" ,
+        "_register_day_num"
+        FROM
+        "_register_driver"
+    </select>
+
+
+
+</mapper>
+

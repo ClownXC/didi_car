@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.cartravel.mapper._payAll_register_order_count_mapper">
+
+
+    <select id="_payAll_register_order_count_searchContext" resultType="com.cartravel.entity._payAll_register_order_count">
+        SELECT
+        "totalCount" ,
+        "registerTotalCount" ,
+        "pay_all"
+        FROM
+        "summary_order_register_pay"
+
+
+    </select>
+
+
+
+
+</mapper>
+
